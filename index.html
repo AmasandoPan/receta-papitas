@@ -3,36 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Museo de la Cocina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Museo de la Cocina - Receta de Papas Fritas</title>
 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; 
+        }
+        .recipe-card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .header-bg {
+            background-color: #f7e6c4; 
+            color: #3e2723;
+            padding: 40px 0;
+            margin-bottom: 20px;
+        }
+        .img-placeholder {
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            background-color: #ff9800;
+            border-color: #ff9800;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #fb8c00;
+            border-color: #fb8c00;
+            color: white;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Museo de la Cocina</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Museo de la Cocina</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link" href="#">Recetas</a>
-                <a class="nav-link" href="#">Ranking Restaurantes</a>
-                
-            </div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="#recipe-section">Recetas</a>
+                    <a class="nav-link" href="#">Ranking Restaurantes</a>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
     </nav>
+
+    
+    <header class="header-bg text-center">
+        <div class="container">
+            <h1 class="display-4 fw-light">Explora la Historia y el Sabor</h1>
+            <p class="lead">Un homenaje a las recetas clásicas que definieron nuestra cultura gastronómica.</p>
+        </div>
+    </header>
+
+    
+    <main class="container py-5" id="recipe-section">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card recipe-card">
+                    <div class="card-header bg-white p-4">
+                        <h2 class="card-title text-center text-dark">🍟 Receta Clásica de Papas Fritas</h2>
+                        <p class="text-muted text-center mb-0">La perfección en una tira dorada.</p>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row">
+                           
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <!-- Placeholder de Imagen 1: Papas frescas -->
+                                <img src="https://placehold.co/800x600/b87e2b/ffffff?text=Papas+Frescas" class="img-fluid img-placeholder w-100" alt="Papas frescas listas para cortar">
+                                <p class="text-center text-muted mt-2"><small>Materia prima de calidad.</small></p>
+                            </div>
+                           
+                            <div class="col-md-7">
+                                <h3 class="text-primary mb-3">Ingredientes</h3>
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Papas Russet o Monalisa (4 grandes)
+                                        <span class="badge bg-secondary rounded-pill">4 ud</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Aceite vegetal (Girasol o Canola)
+                                        <span class="badge bg-secondary rounded-pill">1 Litro</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Sal fina
+                                        <span class="badge bg-secondary rounded-pill">Al gusto</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Agua fría
+                                        <span class="badge bg-secondary rounded-pill">C/N</span>
+                                    </li>
+                                </ul>
+
+                               
+                                <button id="toggle-instructions" class="btn btn-custom w-100 mt-3" type="button">
+                                    Mostrar/Ocultar Pasos de Preparación
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                        <div id="instructions" class="mt-5" style="display: none;">
+                            <h3 class="text-primary mb-4 border-bottom pb-2">Pasos de Preparación</h3>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-success">Paso 1: Cortar y Remojar</h5>
+                                            <p class="card-text">Pela las papas y córtalas en bastones uniformes (aprox. $1$ cm de grosor). Remójalas en un bol con agua muy fría durante al menos $30$ minutos. Esto elimina el exceso de almidón y garantiza una textura crujiente. Seca muy bien antes de freír.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-success">Paso 2: Doble Fritura (El Secreto)</h5>
+                                            <ol>
+                                                <li>**Primera Fritura:** Calienta el aceite a $140^{\circ}C$. Fríe las papas en tandas pequeñas hasta que estén blandas, cocidas por dentro, pero pálidas (unos $5$-$7$ minutos). Retira y escurre.</li>
+                                                <li>**Segunda Fritura:** Sube la temperatura a $180^{\circ}C$. Fríe las papas por segunda vez hasta que estén doradas y crujientes (unos $2$-$3$ minutos).</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    
+                                    <img src="https://placehold.co/1000x400/2b9cb8/ffffff?text=Papas+Fritas+Doradas" class="img-fluid img-placeholder" alt="Papas fritas recién hechas, doradas y crujientes">
+                                    <p class="text-center text-muted mt-2"><small>El resultado final: crujientes y perfectas.</small></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card shadow-sm border-warning">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-warning">Paso 3: Servir</h5>
+                                            <p class="card-text">Retira las papas de la segunda fritura, colócalas sobre papel absorbente para eliminar el exceso de aceite y sazona inmediatamente con sal fina. Sirve caliente con tu salsa favorita. ¡Disfruta!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Museo de la Cocina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous">
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="micodigo.js"></script>
+
 </body>
 </html>
