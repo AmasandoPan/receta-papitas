@@ -1,0 +1,15 @@
+.l-header-bg {
+  /* Renombrado de header-bg a l-header-bg (SMACSS Layout) */
+  background-color: $color-header-bg;
+  color: $color-header-text;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.l-footer {
+  /* Renombrado de footer a l-footer (SMACSS Layout) */
+  background-color: $color-footer-bg;
+  color: $color-footer-text;
+  padding: 20px 0;
+  margin-top: 50px;
+}

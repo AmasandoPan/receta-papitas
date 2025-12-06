@@ -1,0 +1,15 @@
+$color-primary: #ff9800;
+$color-secondary: #fb8c00;
+$color-header-bg: #f7e6c4; // Fondo de la cabecera
+$color-header-text: #3e2723;
+$color-body-bg: #f8f9fa;
+$color-footer-bg: #343a40;
+$color-footer-text: white;
+
+$font-family-base: "Arial", sans-serif;
+
+@mixin responsive-img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%; // Implementando la estructura de media
+}

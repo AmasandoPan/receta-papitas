@@ -1,0 +1,43 @@
+.c-shadow-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.c-img-media {
+  @include responsive-img;
+}
+
+.recipe-card {
+  @extend .c-shadow-card;
+}
+
+/* Elementos */
+.recipe-card__title {
+  text-align: center;
+  color: #3e2723;
+}
+
+/* --- BEM: Componente Botón Personalizado (Custom-Button) --- */
+.btn-custom {
+  /* Bloque Principal: btn-custom */
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: white;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+    color: white;
+  }
+}
+
+/* Modificador */
+.btn-custom--alt {
+  background-color: green;
+  border-color: green;
+  &:hover {
+    background-color: darkgreen;
+  }
+}
